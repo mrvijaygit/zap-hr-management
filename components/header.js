@@ -26,7 +26,7 @@ const Header = () => {
 
         {/* Language Selector */}
         <div className="flex items-center space-x-2">
-          <img src="/us-flag.png" alt="English" className="h-4 w-6" />
+          <img src="/logo.jpeg" alt="English" className="h-4 w-6" />
           <span>English</span>
         </div>
 

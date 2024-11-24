@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Signup() {
   return (
@@ -64,7 +65,7 @@ export default function Signup() {
                 Sign Up
               </button>
               <div className="text-center mt-4">
-                <p className="text-gray-600">Already have an account? <a href="/" className="text-blue-500">Login</a></p>
+                <p className="text-gray-600">Already have an account? <Link href="/" className="text-blue-500">Login</Link></p>
               </div>
             </form>
           </div>

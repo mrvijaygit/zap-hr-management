@@ -92,7 +92,7 @@ export default function UserManagement() {
         />
         <select className="border rounded p-2 flex-1">
           <option>Select Company</option>
-          <option>Dreamguy's Technologies</option>
+          <option>Dreamguy Technologies</option>
           <option>Global Technologies</option>
         </select>
         <select className="border rounded p-2 flex-1">
