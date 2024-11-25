@@ -1,19 +1,20 @@
 "use client";
 
 // components/Sidebar.js
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { FaHome, 
-    FaUser, FaFileAlt, FaCalendarAlt, FaDollarSign, FaChevronDown, FaChevronUp, 
+    FaUser, FaFileAlt, 
+    // FaCalendarAlt, FaDollarSign, FaChevronDown, FaChevronUp, 
     FaSalesforce,
     FaPaypal,
     FaFileArchive} from 'react-icons/fa';
 import { FaChartColumn } from 'react-icons/fa6';
 
 export default function Sidebar() {
-  const [isIncomeOpen, setIsIncomeOpen] = useState(false);
+  // const [isIncomeOpen, setIsIncomeOpen] = useState(false);
 
-  const toggleIncome = () => setIsIncomeOpen(!isIncomeOpen);
+  // const toggleIncome = () => setIsIncomeOpen(!isIncomeOpen);
 
   return (
     <div className="flex flex-col w-64 h-screen bg-gray-100 p-4">
@@ -52,7 +53,7 @@ export default function Sidebar() {
           </div>
         </Link>
 
-        <Link href="/pages/audience">
+        <Link href="/pages/sales">
           <div className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
             <FaSalesforce className="w-5 h-5 mr-3" />
             <span>Sales</span>
@@ -60,7 +61,7 @@ export default function Sidebar() {
         </Link>
 
 
-        <Link href="/pages/audience">
+        <Link href="/pages/accounting">
           <div className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
             <FaChartColumn className="w-5 h-5 mr-3" />
             <span>Accounting</span>
@@ -76,7 +77,7 @@ export default function Sidebar() {
         </Link>
 
 
-        <Link href="/pages/audience">
+        <Link href="/pages/policies">
           <div className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
             <FaFileAlt className="w-5 h-5 mr-3" />
             <span>Policies</span>
@@ -84,7 +85,7 @@ export default function Sidebar() {
         </Link>
 
 
-        <Link href="/pages/audience">
+        <Link href="/pages/payment_report">
           <div className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
             <FaFileArchive className="w-5 h-5 mr-3" />
             <span>Reports</span>
@@ -103,7 +104,7 @@ export default function Sidebar() {
             </div>
         </Link> */}
 
-        <Link href="/pages/schedules">
+        {/* <Link href="/pages/schedules">
             <div className="flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
                 <div className="flex items-center">
                 <FaCalendarAlt className="w-5 h-5 mr-3" />
@@ -113,11 +114,11 @@ export default function Sidebar() {
                 3
                 </span>
             </div>
-        </Link>
+        </Link> */}
          
 
         {/* Collapsible Income Section */}
-        <button
+        {/* <button
           onClick={toggleIncome}
           className="flex items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md"
         >
@@ -141,7 +142,7 @@ export default function Sidebar() {
               <div className="block px-4 py-1 hover:bg-gray-200 rounded-md">Payouts</div>
             </Link>
           </div>
-        )}
+        )} */}
       </nav>
     </div>
   );
