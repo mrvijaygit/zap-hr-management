@@ -69,7 +69,7 @@ export default function Sidebar() {
         </Link>
 
 
-        <Link href="/pages/audience">
+        <Link href="/pages/payroll">
           <div className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
             <FaPaypal className="w-5 h-5 mr-3" />
             <span>Payroll</span>
